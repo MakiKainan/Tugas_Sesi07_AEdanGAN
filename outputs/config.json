@@ -1,0 +1,49 @@
+{
+  "config": {
+    "seed": 42,
+    "dataset": "FashionMNIST",
+    "split": "80/10/10 stratified",
+    "batch_size": 128,
+    "latent_ae": 64,
+    "hidden": 256,
+    "z_gan": 100,
+    "epochs": {
+      "ae": 20,
+      "sae": 20,
+      "vae": 20,
+      "mlp": 15,
+      "frozen_dec": 20,
+      "gan": 40,
+      "dcgan": 15,
+      "ddpm": 10
+    },
+    "lr": {
+      "ae": 0.001,
+      "sae": 0.001,
+      "vae": 0.001,
+      "mlp": 0.001,
+      "frozen_dec": 0.001,
+      "gan": 0.0002,
+      "dcgan": 0.0002,
+      "ddpm": 0.0002
+    },
+    "sparse_lambda": 0.0001,
+    "ddpm_T": 500,
+    "ddpm_beta": [
+      0.0001,
+      0.04
+    ],
+    "ddpm_channels": 32,
+    "ema": 0.999,
+    "n_fid": 2000,
+    "latency_batch": 64
+  },
+  "env": {
+    "python": "3.13.18",
+    "torch": "2.15.0+cu132",
+    "torchvision": "0.29.2+cu132",
+    "device": "cpu",
+    "cpu": "x86_64",
+    "threads": 2
+  }
+}

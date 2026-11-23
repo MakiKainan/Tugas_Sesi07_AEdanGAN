@@ -1,0 +1,7 @@
+Eksperimen,Test acc,test_mse,test_psnr,test_ssim,FID-2000,Mode coverage (H norm)
+MLP Classifier (Tahap 1),0.8867,,,,,
+W^T dari z_MLP (Tahap 3),,0.2698,5.7409,0.0917,,
+Frozen decoder dari z_MLP (Tahap 4),,0.018,18.2524,0.6464,,
+Vanilla AE z_AE (pembanding Tahap 4),,0.0069,22.7223,0.8189,,
+Prior sampling z_MLP (Tahap 5),,,,,156.29,0.8631
+VAE prior sampling (pembanding Tahap 5),,,,,97.78,0.9904
